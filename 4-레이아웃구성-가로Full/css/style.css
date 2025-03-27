@@ -1,0 +1,202 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-weight: 300;
+  color: #222;
+}
+
+/* Header___________________ */
+.util_menu{
+  /* border: 1px solid #000; */
+  width: 1200px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* column-gap: 10px; */
+}
+.util_menu a{
+  padding: 0 5px;
+  font-size: 14px;
+  color: #666;
+  text-transform: capitalize;
+  /* border-left: 1px solid red; */
+}
+/* .util_menu a:first-child{border-left: none;} */
+.util_menu a:not(:first-child){border-left: 1px solid #ccc;}
+.util_menu a:hover{color: crimson;}
+
+.logo{text-align: center;}
+.logo img{width: 200px}
+
+nav{ /* 1번째 부모:가로 100% */
+  width: 100%;
+  height: 70px;
+  background-color: #333;
+  margin-top: 30px;
+}
+nav .gnb{ /* 2번째 부모:컨텐츠가로크기,가운데정렬 */
+  /* border: 1px solid red; */
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.gnb li a{
+  /* border: 1px solid yellow; */
+  display: block;
+  color: #fff;
+  width: 150px;
+  height: 70px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 70px;
+  transition: 0.35s;
+}
+.gnb li a:hover{
+  background-color: crimson;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* Main______________________ */
+main{
+  height: 500px;
+  background: url(../image/main1.jpg) no-repeat center/cover fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+main:hover{background-image: url(../image/main2.jpg);}
+
+.main_title h1{
+  color: #fff;
+  font-weight: 400;
+  font-size: 45px;
+  padding: 5px 70px;
+  /* background-color: rgba(0,0,0,0.5); */
+  background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.9) 50%, transparent 100%);
+}
+.main_title h3{
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px #000;
+}
+
+
+/* Section___________________ */
+section{
+  width: 1200px;
+  margin: 50px auto;
+  text-align: center;
+}
+section h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+}
+.content1, .content2, .content3{
+  margin: 40px 0;
+}
+.content1 div, 
+.content2 div, 
+.content3 div{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #777;
+}
+
+/* content1 */
+.content1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.content1 div{
+  width: 300px;
+  height: 250px;
+  line-height: 250px;
+  background-color: #ddd;
+  /* border: 1px solid #808080; */
+  border: solid #808080;
+  border-width: 1px 0 0 1px; /* 상,우,하,좌 */
+  box-sizing: border-box;
+}
+.content1 div:nth-child(4), .content1 div:last-child{
+  border-right: 1px solid #808080;
+}
+/* 00 ~ 00 범위 지정하기
+형식: nth-child(n+k):nth-child(-n+m)
+예)nth-child(n+4):nth-child(-n+8) -> 4번째에서 8번째
+예):nth-child(-n+4) -> 4번째까지
+예):nth-child(n+5) -> 5번째부터
+*/
+.content1 div:nth-child(n+5):nth-child(-n+8){
+  border-bottom: 1px solid #808080;
+}
+
+/* content2 */
+.content2{
+  height: 200px;
+  display: flex;
+}
+.content2 div{
+  height: inherit;
+  line-height: 200px;
+  font-size: 26px;
+  color: #fff;
+}
+.content2 div:nth-child(1){
+  background-color: royalblue;
+  flex: 1;
+}
+.content2 div:nth-child(2){
+  background-color: yellowgreen;
+  flex: 2;
+}
+.content2 div:nth-child(3){
+  background-color: orange;
+  flex: 1;
+}
+
+/* content3 */
+.content3{
+  height: 300px;
+  display: grid;
+  /* grid-template-columns:repeat(5, 1fr); */
+  grid-template-columns:1fr 2fr 1fr 1fr 1fr; 
+  column-gap:10px;
+}
+.content3 div{
+  background-color: #eee;
+  line-height: 300px;
+}
+.content3 div:nth-child(odd){background-color: #bbb}
+
+
+/* Footer___________________ */
+footer{
+  background-color: #333;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+address{
+  font-style: normal; /*address태그에 기본적으로 적용되는 기울임 해지*/
+  color: #888;
+}
+address span{
+  color: #fff;
+  font-weight: 500;
+}

@@ -1,0 +1,41 @@
+web
+process
+production
+planning
+service
+contact
+
+==========================================
+
+how it works
+web development
+Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle. In addition, web developers may create content for the site.
+
+Although Web Developers need a mixture of education, soft skills, and technical skills, ultimately a core job responsibility is writing code, and that means that any Web Developer must have advanced programming skills with a thorough knowledge of any number of programming languages and libraries.
+
+our services
+
+==========================================
+
+html
+hyper text markup language
+하이퍼 텍스트 마크업 언어는 웹 페이지 표시를 위해 개발된 지배적인 마크업 언어다. 또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다.
+Hypertext Markup Language is the dominant markup language developed for displaying web pages. HTML also provides a way to create structured documents with links, citations, and other items, as well as structural semantics for body text such as headings, paragraphs, and lists.
+
+
+css
+cascading style sheets
+종속형 시트 또는 캐스케이딩 스타일 시트는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다. 기본 파일명은 style.css이다.
+Cascading Style Sheets, or Cascading Style Sheets, is a style language that describes how a markup language is actually displayed. It is mainly used in HTML and XHTML, and can also be used in XML. It is a W3C standard and offers a high degree of freedom in defining layout and style. The default file name is style.css.
+
+javascript
+자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용되며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다.
+JavaScript is an object-based scripting programming language. It is primarily used within web browsers, but also has the ability to access built-in objects from other applications. It is also used for server programming, such as in runtime environments like Node.js.
+
+jquery
+jQuery는 HTML의 클라이언트 사이드 조작을 단순화 하도록 설계된 크로스 플랫폼의 자바스크립트 라이브러리다. 거의 모든 웹 브라우저에 대응할 정도로 브라우저 호환성이 있으며, 존 레식이 2006년 뉴욕 시 바캠프에서 공식적으로 소개하였다. 
+jQuery is a cross-platform JavaScript library designed to simplify client-side manipulation of HTML. It is browser compatible enough to support almost all web browsers, and was officially introduced by John Resig at BarCamp in New York City in 2006.
+
+==========================================
+
+copyright web.dev all rights reserved.
