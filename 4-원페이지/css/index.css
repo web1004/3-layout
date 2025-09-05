@@ -1,8 +1,7 @@
 @import url(reset.css);
 
-html{
-  scroll-behavior: smooth;
-}
+html{scroll-behavior: smooth;}  /* 스크롤시 부드럽게 이동 */
+
 body{
   line-height: 1.5;
   color: #222;
@@ -17,20 +16,20 @@ body{
   border: 1px solid #000;
   border-radius: 10px;
   background-color: #fff;
+  /* z-index : 높은숫자;  -->모든 컨텐츠보다 맨위에 올라오게 함 */
 }
 
 
-/* Header ----------------- */
+/* Header________________________ */
 header{
-  width: 100%; /* position: fixed; 는 inline-block으로 변경되어서 가로너비가 컨텐츠만큼 크기가 되버림 ->가로너비 100%를 넣어주야 함 */
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 80px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
-
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 #header-inner{
   width: 1200px;
@@ -59,7 +58,7 @@ header{
 .gnb a:hover{color: crimson;}
 
 
-/* Main ----------------- */
+/* Main________________________ */
 main{
   height: 600px;
   /* background-image: url(../image/main.jpg);
@@ -69,12 +68,14 @@ main{
   background-size: cover; */
 
   background: url(../image/main.jpg) no-repeat center/cover fixed;
+  margin-top: 80px;  /* 헤더가 fixed로 둥둥떠있는 상태이므로 헤더 높이만큼 내려줌 */
 }
 
 
-/* Section ----------------- */
+/* Section________________________ */
+/* 공통 */
 section{}
-.section-inner{
+.seciton-inner{
   width: 1200px;
   margin: auto;
   padding: 100px 0;
@@ -103,7 +104,8 @@ section h2{
   height: 800px;
 }
 
-/* Footer ----------------- */
+
+/* Footer________________________ */
 footer{
   background-color: #333;
   text-align: center;
